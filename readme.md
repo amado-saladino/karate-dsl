@@ -14,11 +14,19 @@ docker run -d --name karate -v $PWD:/app -w /app -v maven-repo:/root/.m2 maven:3
 docker-compose up -d
 ```
 
-### Open report
+### Apache report
 
-Open browser and navigate to `http://localhost:8000`
+```
+http://localhost:8000
+```
 
-### retest
+### Nginx report
+
+```
+http://localhost:8080
+```
+
+### Regression test
 
 ```shell
 docker-compose start karate-test
