@@ -1,0 +1,6 @@
+cat > .htaccess <<EOF
+DirectoryIndex overview-features.html
+EOF
+
+
+docker run -d -p 96:80 -v $PWD/cucumber-html-reports:/usr/local/apache2/htdocs -v $PWD/my-httpd.conf:/usr/local/apache2/conf/httpd.conf  httpd

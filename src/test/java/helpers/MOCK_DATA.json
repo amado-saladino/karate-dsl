@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "first_name": "Tomasine",
+    "last_name": "Cominoli",
+    "email": "tcominoli0@globo.com",
+    "gender": "Genderfluid"
+  },
+  {
+    "id": 2,
+    "first_name": "Filmer",
+    "last_name": "Crowdy",
+    "email": "fcrowdy1@theglobeandmail.com",
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "first_name": "Nerte",
+    "last_name": "Birkinshaw",
+    "email": "nbirkinshaw2@accuweather.com",
+    "gender": "Female"
+  },
+  {
+    "id": 4,
+    "first_name": "Corey",
+    "last_name": "Martino",
+    "email": "cmartino3@over-blog.com",
+    "gender": "Female"
+  },
+  {
+    "id": 5,
+    "first_name": "Zarah",
+    "last_name": "Cast",
+    "email": "zcast4@unblog.fr",
+    "gender": "Male"
+  }
+]
