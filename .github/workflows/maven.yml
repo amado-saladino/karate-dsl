@@ -28,7 +28,7 @@ jobs:
         if: always()
         with:
           check_name: Maven Test Summary Report
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           report_paths: "target/surefire-reports/TEST-*.xml"
 
       - name: JUnit Report
