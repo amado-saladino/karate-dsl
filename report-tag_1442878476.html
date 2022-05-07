@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @parallel=false</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Conduit App</td>
+      <td>07 May 2022, 08:50</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@parallel=false</td>
+          <td      class="passed"    >50</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">50</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="2176258664">2.176</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3390567032.html">conduit/features/HomeWork.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1442878476.html">@parallel=false</a>
+</div>
+
+
+  <span class="lead-duration duration">0.838</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Favorite articles</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def isValidTime = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params { limit: 10, offset: 0 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.335</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>08:50:51.299 request:
+1 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:51.634 response time in milliseconds: 332
+1 &lt; 200
+1 &lt; Date: Sat, 07 May 2022 08:50:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;e6f-6LPGWW6iAP8j5ixc4I2k47gtu9s&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=jTJ0HxB5RlJcFHYSKQe7As7ZGCh1zPMxCcIioc3mOLRn7KQ1wh1COHIfMvl%2BEioIhBMgGPYj6XkeEnCJrLzRFXejtBIMe6ILvpEp563uzGgAKDotGA9kURTSrBXUprLOwoOS&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7078b5ded8bd7d3b-LAX
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;circuit-9251&quot;,&quot;title&quot;:&quot;circuit&quot;,&quot;description&quot;:&quot;The House of Mirth&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;paradigm-9251&quot;,&quot;title&quot;:&quot;paradigm&quot;,&quot;description&quot;:&quot;From Here to Eternity&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T08:20:29.438Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:20:29.438Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Vision-oriented-9251&quot;,&quot;title&quot;:&quot;Vision-oriented&quot;,&quot;description&quot;:&quot;Lilies of the Field&quot;,&quot;body&quot;:&quot;Xander Harris&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:55:02.745Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:55:02.745Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;moratorium-9251&quot;,&quot;title&quot;:&quot;moratorium&quot;,&quot;description&quot;:&quot;Ah, Wilderness!&quot;,&quot;body&quot;:&quot;Tara Maclay&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:47:19.756Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:47:19.756Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;implementation-9251&quot;,&quot;title&quot;:&quot;implementation&quot;,&quot;description&quot;:&quot;The Wings of the Dove&quot;,&quot;body&quot;:&quot;Drusilla&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:41:25.861Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:41:25.861Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;archive-9251&quot;,&quot;title&quot;:&quot;archive&quot;,&quot;description&quot;:&quot;Of Mice and Men&quot;,&quot;body&quot;:&quot;Darla&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:18:19.638Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:18:19.638Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;user-facing-9251&quot;,&quot;title&quot;:&quot;user-facing&quot;,&quot;description&quot;:&quot;An Acceptable Time&quot;,&quot;body&quot;:&quot;Buffy Summers&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-02-12T09:40:12.382Z&quot;,&quot;updatedAt&quot;:&quot;2022-02-12T09:40:12.382Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;bandwidth-monitored-9251&quot;,&quot;title&quot;:&quot;bandwidth-monitored&quot;,&quot;description&quot;:&quot;A Darkling Plain&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-01-18T10:42:34.281Z&quot;,&quot;updatedAt&quot;:&quot;2022-01-18T10:42:34.281Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Synergistic-9251&quot;,&quot;title&quot;:&quot;Synergistic&quot;,&quot;description&quot;:&quot;By Grand Central Station I Sat Down and Wept&quot;,&quot;body&quot;:&quot;Andrew Wells&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-01-17T21:18:01.323Z&quot;,&quot;updatedAt&quot;:&quot;2022-01-17T21:18:01.323Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;standardization-9251&quot;,&quot;title&quot;:&quot;standardization&quot;,&quot;description&quot;:&quot;I Know Why the Caged Bird Sings&quot;,&quot;body&quot;:&quot;Buffy Summers&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-01-16T21:11:31.855Z&quot;,&quot;updatedAt&quot;:&quot;2022-01-16T21:11:31.855Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:72}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def first_article = response.articles[0]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print first_article.slug</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>08:50:51.636 [print] circuit-9251 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles',first_article.slug,'favorite'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.199</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>08:50:51.638 request:
+2 &gt; POST https://api.realworld.io/api/articles/circuit-9251/favorite
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:51.836 response time in milliseconds: 198
+2 &lt; 200
+2 &lt; Date: Sat, 07 May 2022 08:50:51 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;276-FOs6seFlthIx1eKhBsTT6GKDMR8&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=3ADPPUHzpeqIUhTVmLkUnHR0KZHSFCwl37ZZBBrGgDx37difcHTiJ9wB34UPxq7pZIogCCPeelIVsZrM3RRsi%2B7gkj5KmrTTyxcKMlWnWHXbJh9hdQGkgJE1c5QLatTkTIb8&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7078b5e0e94b7cf8-LAX
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;article&quot;:{&quot;id&quot;:67343,&quot;slug&quot;:&quot;circuit-9251&quot;,&quot;title&quot;:&quot;circuit&quot;,&quot;description&quot;:&quot;The House of Mirth&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;createdAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;authorId&quot;:9251,&quot;tagList&quot;:[],&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritedBy&quot;:[{&quot;id&quot;:9251,&quot;email&quot;:&quot;karate@email.com&quot;,&quot;username&quot;:&quot;karate-developer&quot;,&quot;password&quot;:&quot;$2a$10$.qbTMSCZZMKmtYzBVeTPtOIcU4EnMnvIVNHJnYcrhn/xyJotzRKAe&quot;,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;bio&quot;:null,&quot;demo&quot;:false}],&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1}}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#    And match response.article.favoritesCount == first_article.favoritesCount + 1</div>
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>{
+ &quot;article&quot;: {
+     &quot;id&quot;: &quot;#number&quot;,
+     &quot;slug&quot;: &quot;#string&quot;,
+     &quot;title&quot;: &quot;#string&quot;,
+     &quot;description&quot;: &quot;#string&quot;,
+     &quot;body&quot;: &quot;#string&quot;,
+     &quot;createdAt&quot;: &quot;#? isValidTime(_)&quot;,
+     &quot;updatedAt&quot;: &quot;#? isValidTime(_)&quot;,
+     &quot;authorId&quot;: &quot;#number&quot;,
+     &quot;tagList&quot;: #array,
+     &quot;author&quot;: {
+         &quot;username&quot;: &quot;#string&quot;,
+         &quot;bio&quot;: ##string,
+         &quot;image&quot;: &quot;#regex ^https:\/\/api\\.realworld\\.io\/images\/.*jpeg$&quot;,
+         &quot;following&quot;: &quot;#boolean&quot;
+     },
+     &quot;favoritedBy&quot;: [
+         {
+             &quot;id&quot;: &quot;#number&quot;,
+             &quot;email&quot;: &quot;karate@email.com&quot;,
+             &quot;username&quot;: &quot;karate-developer&quot;,
+             &quot;password&quot;: &quot;$2a$10$.qbTMSCZZMKmtYzBVeTPtOIcU4EnMnvIVNHJnYcrhn/xyJotzRKAe&quot;,
+             &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+             &quot;bio&quot;: null,
+             &quot;demo&quot;: false
+         }
+     ],
+     &quot;favorited&quot;: true,
+     &quot;favoritesCount&quot;: &quot;#number&quot;
+ }
+    }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params { favorited: 'karate-developer', limit: 5, offset: 0 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.274</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>08:50:51.843 request:
+3 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=5&amp;favorited=karate-developer
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+3 &gt; Host: api.realworld.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:52.115 response time in milliseconds: 270
+3 &lt; 200
+3 &lt; Date: Sat, 07 May 2022 08:50:52 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Etag: W/&quot;72d-1EsNuwpbvy1jX3gsLa/Peis6qG8&quot;
+3 &lt; Via: 1.1 vegur
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+3 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VcI5704iimKdjbbcTlHFoTOh233OUj8iv8t4z%2FAcizocoBfebhYaaiJDqzD6tQ9%2FZluL9bkU5aj59fWLuUNlcVRAdjYC8KNe1j0h1Dsa5DTZHvWdFxlmiUs2sg%2Fa%2BqmT5UDK&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; Server: cloudflare
+3 &lt; CF-RAY: 7078b5e23d1f7c6d-LAX
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;circuit-9251&quot;,&quot;title&quot;:&quot;circuit&quot;,&quot;description&quot;:&quot;The House of Mirth&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;paradigm-9251&quot;,&quot;title&quot;:&quot;paradigm&quot;,&quot;description&quot;:&quot;From Here to Eternity&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T08:20:29.438Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:20:29.438Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Vision-oriented-9251&quot;,&quot;title&quot;:&quot;Vision-oriented&quot;,&quot;description&quot;:&quot;Lilies of the Field&quot;,&quot;body&quot;:&quot;Xander Harris&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:55:02.745Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:55:02.745Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;moratorium-9251&quot;,&quot;title&quot;:&quot;moratorium&quot;,&quot;description&quot;:&quot;Ah, Wilderness!&quot;,&quot;body&quot;:&quot;Tara Maclay&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:47:19.756Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:47:19.756Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;implementation-9251&quot;,&quot;title&quot;:&quot;implementation&quot;,&quot;description&quot;:&quot;The Wings of the Dove&quot;,&quot;body&quot;:&quot;Drusilla&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:41:25.861Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:41:25.861Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:24}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response.articles</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>08:50:52.119 [print] [
+  {
+    &quot;slug&quot;: &quot;circuit-9251&quot;,
+    &quot;title&quot;: &quot;circuit&quot;,
+    &quot;description&quot;: &quot;The House of Mirth&quot;,
+    &quot;body&quot;: &quot;Angel&quot;,
+    &quot;tagList&quot;: [
+    ],
+    &quot;createdAt&quot;: &quot;2022-05-07T08:50:45.386Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-05-07T08:50:45.386Z&quot;,
+    &quot;favorited&quot;: true,
+    &quot;favoritesCount&quot;: 1,
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;karate-developer&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    }
+  },
+  {
+    &quot;slug&quot;: &quot;paradigm-9251&quot;,
+    &quot;title&quot;: &quot;paradigm&quot;,
+    &quot;description&quot;: &quot;From Here to Eternity&quot;,
+    &quot;body&quot;: &quot;Angel&quot;,
+    &quot;tagList&quot;: [
+    ],
+    &quot;createdAt&quot;: &quot;2022-05-07T08:20:29.438Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-05-07T08:20:29.438Z&quot;,
+    &quot;favorited&quot;: true,
+    &quot;favoritesCount&quot;: 1,
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;karate-developer&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    }
+  },
+  {
+    &quot;slug&quot;: &quot;Vision-oriented-9251&quot;,
+    &quot;title&quot;: &quot;Vision-oriented&quot;,
+    &quot;description&quot;: &quot;Lilies of the Field&quot;,
+    &quot;body&quot;: &quot;Xander Harris&quot;,
+    &quot;tagList&quot;: [
+    ],
+    &quot;createdAt&quot;: &quot;2022-05-07T07:55:02.745Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-05-07T07:55:02.745Z&quot;,
+    &quot;favorited&quot;: true,
+    &quot;favoritesCount&quot;: 1,
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;karate-developer&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    }
+  },
+  {
+    &quot;slug&quot;: &quot;moratorium-9251&quot;,
+    &quot;title&quot;: &quot;moratorium&quot;,
+    &quot;description&quot;: &quot;Ah, Wilderness!&quot;,
+    &quot;body&quot;: &quot;Tara Maclay&quot;,
+    &quot;tagList&quot;: [
+    ],
+    &quot;createdAt&quot;: &quot;2022-05-07T07:47:19.756Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-05-07T07:47:19.756Z&quot;,
+    &quot;favorited&quot;: true,
+    &quot;favoritesCount&quot;: 1,
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;karate-developer&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    }
+  },
+  {
+    &quot;slug&quot;: &quot;implementation-9251&quot;,
+    &quot;title&quot;: &quot;implementation&quot;,
+    &quot;description&quot;: &quot;The Wings of the Dove&quot;,
+    &quot;body&quot;: &quot;Drusilla&quot;,
+    &quot;tagList&quot;: [
+    ],
+    &quot;createdAt&quot;: &quot;2022-05-07T07:41:25.861Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-05-07T07:41:25.861Z&quot;,
+    &quot;favorited&quot;: true,
+    &quot;favoritesCount&quot;: 1,
+    &quot;author&quot;: {
+      &quot;username&quot;: &quot;karate-developer&quot;,
+      &quot;bio&quot;: null,
+      &quot;image&quot;: &quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,
+      &quot;following&quot;: false
+    }
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def slugs = karate.jsonPath(response,&quot;$.articles[*].slug&quot;)</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print slugs</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>08:50:52.135 [print] [
+  &quot;circuit-9251&quot;,
+  &quot;paradigm-9251&quot;,
+  &quot;Vision-oriented-9251&quot;,
+  &quot;moratorium-9251&quot;,
+  &quot;implementation-9251&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.articles.*slug contains first_article.slug</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3390567032.html">conduit/features/HomeWork.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1442878476.html">@parallel=false</a>
+</div>
+
+
+  <span class="lead-duration duration">1.337</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Comment articles</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params { limit: 10, offset: 0 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.328</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>08:50:52.143 request:
+1 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:52.468 response time in milliseconds: 325
+1 &lt; 200
+1 &lt; Date: Sat, 07 May 2022 08:50:52 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;e6f-6LPGWW6iAP8j5ixc4I2k47gtu9s&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=sFEx%2BD1NoDFILSWL7693AONlz8x6XGqJDdGT9FrNnqZ8ikfEZ%2F16VErPeGYAYWiyZmVl58SZdUxQGEN6KKIKbgiB1liATUq7JMQb0QrB35zAeJmOSTA9BBlDL27%2FgQ9QUz0f&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7078b5e41f660cdb-LAX
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;circuit-9251&quot;,&quot;title&quot;:&quot;circuit&quot;,&quot;description&quot;:&quot;The House of Mirth&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:50:45.386Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;paradigm-9251&quot;,&quot;title&quot;:&quot;paradigm&quot;,&quot;description&quot;:&quot;From Here to Eternity&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T08:20:29.438Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:20:29.438Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Vision-oriented-9251&quot;,&quot;title&quot;:&quot;Vision-oriented&quot;,&quot;description&quot;:&quot;Lilies of the Field&quot;,&quot;body&quot;:&quot;Xander Harris&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:55:02.745Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:55:02.745Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;moratorium-9251&quot;,&quot;title&quot;:&quot;moratorium&quot;,&quot;description&quot;:&quot;Ah, Wilderness!&quot;,&quot;body&quot;:&quot;Tara Maclay&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:47:19.756Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:47:19.756Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;implementation-9251&quot;,&quot;title&quot;:&quot;implementation&quot;,&quot;description&quot;:&quot;The Wings of the Dove&quot;,&quot;body&quot;:&quot;Drusilla&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:41:25.861Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:41:25.861Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;archive-9251&quot;,&quot;title&quot;:&quot;archive&quot;,&quot;description&quot;:&quot;Of Mice and Men&quot;,&quot;body&quot;:&quot;Darla&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-05-07T07:18:19.638Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T07:18:19.638Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;user-facing-9251&quot;,&quot;title&quot;:&quot;user-facing&quot;,&quot;description&quot;:&quot;An Acceptable Time&quot;,&quot;body&quot;:&quot;Buffy Summers&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-02-12T09:40:12.382Z&quot;,&quot;updatedAt&quot;:&quot;2022-02-12T09:40:12.382Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;bandwidth-monitored-9251&quot;,&quot;title&quot;:&quot;bandwidth-monitored&quot;,&quot;description&quot;:&quot;A Darkling Plain&quot;,&quot;body&quot;:&quot;Angel&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-01-18T10:42:34.281Z&quot;,&quot;updatedAt&quot;:&quot;2022-01-18T10:42:34.281Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Synergistic-9251&quot;,&quot;title&quot;:&quot;Synergistic&quot;,&quot;description&quot;:&quot;By Grand Central Station I Sat Down and Wept&quot;,&quot;body&quot;:&quot;Andrew Wells&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-01-17T21:18:01.323Z&quot;,&quot;updatedAt&quot;:&quot;2022-01-17T21:18:01.323Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;standardization-9251&quot;,&quot;title&quot;:&quot;standardization&quot;,&quot;description&quot;:&quot;I Know Why the Caged Bird Sings&quot;,&quot;body&quot;:&quot;Buffy Summers&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2022-01-16T21:11:31.855Z&quot;,&quot;updatedAt&quot;:&quot;2022-01-16T21:11:31.855Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:72}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def first_article = response.articles[0]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles', first_article.slug, 'comments'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.190</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>08:50:52.475 request:
+2 &gt; GET https://api.realworld.io/api/articles/circuit-9251/comments
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:52.660 response time in milliseconds: 182
+2 &lt; 200
+2 &lt; Date: Sat, 07 May 2022 08:50:52 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 15
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;f-DSK3s7cPAqrq+537gdA1gy8XGx8&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=2Za%2Btwc7xZa4Fbt8rIyfbt%2BU3DU3si%2Fat%2FznvxV73k4PpRhUbpaVYqCMcviYYkNX%2BzrBnlmgykTSwyxhgvT5%2B45bAndaVTSlujqWSLMRiDV8j6uMeuyyVY7SgQ0lKRRjDGsL&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 7078b5e62e8f7bfe-LAX
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;comments&quot;:[]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def comment_count = response.comments.length</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles', first_article.slug, 'comments'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>{&quot;comment&quot;:{&quot;body&quot;:&quot;#(body)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.198</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>08:50:52.666 request:
+3 &gt; POST https://api.realworld.io/api/articles/circuit-9251/comments
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 31
+3 &gt; Host: api.realworld.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;comment&quot;:{&quot;body&quot;:&quot;Drusilla&quot;}}
+
+08:50:52.862 response time in milliseconds: 195
+3 &lt; 200
+3 &lt; Date: Sat, 07 May 2022 08:50:52 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Etag: W/&quot;fa-z4Mb8R6q+b/TXUHzbLQ0eemeAbY&quot;
+3 &lt; Via: 1.1 vegur
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+3 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=kDnV0LQlNqiCHu9RJYDdva4aTwnEjfz8%2FEsfm%2FlEmA07XyS%2BpiLDRGSXbBEWoLXtOfu54MxV1i8ODz1AxELrD4cMMqvWDTBwzx3DorVhIjJ72oIYxvR6a7Vi4MctD6vo3n1r&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; Server: cloudflare
+3 &lt; CF-RAY: 7078b5e75d407c8f-LAX
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;comment&quot;:{&quot;id&quot;:11587,&quot;createdAt&quot;:&quot;2022-05-07T08:50:52.809Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:50:52.809Z&quot;,&quot;body&quot;:&quot;Drusilla&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.comment contains {&quot;body&quot;: #(body)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def comment_id = response.comment.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'comment id: ' + comment_id</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>08:50:52.867 [print] comment id: 11587 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles', first_article.slug, 'comments'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.202</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>08:50:52.868 request:
+4 &gt; GET https://api.realworld.io/api/articles/circuit-9251/comments
+4 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+4 &gt; Host: api.realworld.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:53.068 response time in milliseconds: 200
+4 &lt; 200
+4 &lt; Date: Sat, 07 May 2022 08:50:53 GMT
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; X-Powered-By: Express
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Etag: W/&quot;fd-jZAqZGO/KwoXIdlVB3n1taF7eC8&quot;
+4 &lt; Via: 1.1 vegur
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+4 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=MhawLSeQzI6e63rL3WvZxdEMRhNaf41X3Jbi2ql7Q%2Fbr6j7FTZRX91k754fE0OUL%2Fpq41On93u7y3xPcFpT4ReSVcvvrppqzw4uZnmb3n%2FfR9AtGBZQmMryS1FrnmsvS%2BCIm&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; Server: cloudflare
+4 &lt; CF-RAY: 7078b5e89b3f7b59-LAX
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;comments&quot;:[{&quot;id&quot;:11587,&quot;createdAt&quot;:&quot;2022-05-07T08:50:52.809Z&quot;,&quot;updatedAt&quot;:&quot;2022-05-07T08:50:52.809Z&quot;,&quot;body&quot;:&quot;Drusilla&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;karate-developer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def new_comment_count = response.comments.length</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match new_comment_count == comment_count + 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles', first_article.slug, 'comments', comment_id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">0.190</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>08:50:53.072 request:
+5 &gt; DELETE https://api.realworld.io/api/articles/circuit-9251/comments/11587
+5 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+5 &gt; Host: api.realworld.io
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+5 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:53.262 response time in milliseconds: 188
+5 &lt; 204
+5 &lt; Date: Sat, 07 May 2022 08:50:53 GMT
+5 &lt; Content-Length: 0
+5 &lt; Connection: keep-alive
+5 &lt; X-Powered-By: Express
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Etag: W/&quot;a-bAsFyilMr4Ra1hIU5PyoyFRunpI&quot;
+5 &lt; Via: 1.1 vegur
+5 &lt; CF-Cache-Status: DYNAMIC
+5 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+5 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=uc19E14OMutGGEYzS6iJ6ho7cyKLxHQEhpmZ1fTVqEsvshb9x7nsszkkVaWdAo8edvnPWmDZgriLDgt5aKCESJfNSuA%2BkK6ecnAqOSKbe4VLZ4EH2IIB2qg9fG3lrfJpiIFQ&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+5 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+5 &lt; Server: cloudflare
+5 &lt; CF-RAY: 7078b5e9eeec0cef-LAX
+5 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 204</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles', first_article.slug, 'comments'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.214</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>08:50:53.263 request:
+6 &gt; GET https://api.realworld.io/api/articles/circuit-9251/comments
+6 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZUBlbWFpbC5jb20iLCJ1c2VybmFtZSI6ImthcmF0ZS1kZXZlbG9wZXIiLCJpYXQiOjE2NTE5MTM0NDQsImV4cCI6MTY1NzA5NzQ0NH0.r2BrcV4FHzhx-JEOVYwFmA5A4cBewiUdVqCAVsxvV-k
+6 &gt; Host: api.realworld.io
+6 &gt; Connection: Keep-Alive
+6 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+6 &gt; Accept-Encoding: gzip,deflate
+
+
+08:50:53.474 response time in milliseconds: 211
+6 &lt; 200
+6 &lt; Date: Sat, 07 May 2022 08:50:53 GMT
+6 &lt; Content-Type: application/json; charset=utf-8
+6 &lt; Content-Length: 15
+6 &lt; Connection: keep-alive
+6 &lt; X-Powered-By: Express
+6 &lt; Access-Control-Allow-Origin: *
+6 &lt; Etag: W/&quot;f-DSK3s7cPAqrq+537gdA1gy8XGx8&quot;
+6 &lt; Via: 1.1 vegur
+6 &lt; CF-Cache-Status: DYNAMIC
+6 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+6 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ba9GZeJZHFFkT%2BXZvMmVpceyV9M9LXbK7K2sJqpclUps4WhKM6Jn0pXY%2BY3ZfpVZGlRdlkd05QhZ2%2BqXRYMGyAc8GpGrIFvQV3BqDs7ONput%2B3oqNu%2FzASchwSfLLt6EUGkm&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; Server: cloudflare
+6 &lt; CF-RAY: 7078b5eb1ace7daa-LAX
+6 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;comments&quot;:[]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def new_comment_count = response.comments.length</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match new_comment_count == comment_count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
