@@ -1,6 +1,6 @@
 # Overview
 
-Karate demo
+Karate demo for API testing
 
 ## Run in a container
 
